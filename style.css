@@ -1,0 +1,182 @@
+body {
+    background-color: #f7f7f7;
+    font-family: sans-serif;
+}
+
+.wrapper {
+    position: absolute;
+    top: 15vh;
+    left: calc((100% - 57rem) / 2);
+    display: grid;
+    grid-template-columns: repeat(2, auto);
+    grid-template-rows: 1fr;
+    grid-gap: 2rem;
+}
+
+.menu {
+    height: 37rem;
+    width: 15rem;
+    position: relative;
+    background-image: linear-gradient(45deg, #fa7268, #bb5353);
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 2px #000;
+    border-radius: 1rem;
+    font-size: 1.5rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+}
+
+.turnsCounter {
+    width: 15rem;
+}
+
+.turnsCounterValue {
+    font-size: 10rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+
+.turnsCounterTimer {
+    font-size: 4rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+    display: grid;
+    grid-template-columns: 2fr 1fr 3fr 1fr 3fr;
+    grid-template-rows: 1fr;
+}
+
+.turnsCounterTxt {
+    font-size: 2rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    text-align: left;
+    
+}
+
+.gameBtn {
+    font-size: 2rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+}
+
+.gameBtn:hover {
+    text-shadow: 0px 0px 1px #f7f7f7;
+    cursor: pointer;
+}
+
+.clearStats {
+    text-align: center;
+}
+
+.clearStats:hover {
+    text-shadow: 0px 0px 1px #f7f7f7;
+    cursor: pointer;
+}
+
+.welcomeScreen {
+    height: 37rem;
+    width: 37rem;
+    position: relative;
+    background-image: linear-gradient(45deg, #fa7268, #bb5353);
+    display: block;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 2px #000;
+    place-self: center;
+    font-size: 3rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    border-radius: 1rem;
+    text-align: center;
+}
+
+.game {
+    height: 37rem;
+    width: 37rem;
+    position: relative;
+    background-image: linear-gradient(45deg, #fa7268, #bb5353);
+    display: none;
+    grid-template-columns: repeat(6,auto);
+    grid-template-rows: repeat(6,auto);
+    grid-gap: 1rem;
+    align-items: center;
+    padding: 1rem;
+    box-shadow: 0px 0px 10px 2px #000;
+    border-radius: 1rem;
+    place-self: center;
+}
+
+.box {
+    height: 5rem;
+    width: 5rem;
+    background-size: cover;
+    position: relative;
+    border-radius: 1rem;
+    transition: height 0.1s;
+    box-shadow: 0px 0px 10px 2px #000;
+}
+
+.box:hover {
+    cursor: pointer;
+    box-shadow: 0px 0px 10px 2px #f7f7f7;
+}
+
+.active {
+    box-shadow: 0px 0px 10px 2px #f7f7f7;
+}
+
+.boxInvisible {
+    height: 5rem;
+    width: 5rem;
+    background-image: #e7e9e2;
+    position: relative;
+    border: 0px;
+    box-shadow: none;
+}
+
+.boxMatched {
+    cursor: pointer;
+    animation: boxBlink 1s infinite;
+}
+
+.gameWon {
+    height: 37rem;
+    width: 37rem;
+    position: relative;
+    background-image: linear-gradient(45deg, #fa7268, #bb5353);
+    font-size: 3rem;
+    color: #fbe904;
+    text-shadow: 0px 0px 10px #000;
+    text-align: center;
+    display: none;
+    box-shadow: 0px 0px 10px 2px #000;
+    border-radius: 1rem;
+    place-self: center;
+    padding: 1rem;
+}
+
+.stats {
+    font-size: 2rem;
+}
+
+@keyframes boxBlink {
+    0% {box-shadow: 0px 0px 10px 2px #f7f7f7;}
+    20% {box-shadow: 0px 0px 10px 2px #fbe904;}
+    40% {box-shadow: 0px 0px 10px 2px #f7f7f7;}
+    50% {box-shadow: 0px 0px 10px 2px #fbe904;}
+    60% {box-shadow: 0px 0px 10px 2px #f7f7f7;}
+    70% {box-shadow: 0px 0px 10px 2px #fbe904;}
+    80% {box-shadow: 0px 0px 10px 2px #f7f7f7;}
+    90% {box-shadow: 0px 0px 10px 2px #fbe904;}
+    100% {box-shadow: 0px 0px 10px 2px #f7f7f7;}
+}
+
+.visible {
+    display: block;
+}
+
+.invisible {
+    display: none;
+}

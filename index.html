@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans:100,300,400,600" rel="stylesheet" type="text/css">
+        <link type="text/css" rel="stylesheet" href="style.css">
+        <title>Memory 01</title>
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="menu">
+                <div class="turnsCounter">
+                    <div class="turnsCounterTxt">TURN</div>
+                    <div class="turnsCounterValue">0</div>
+                    <div class="turnsCounterTxt">TIMER</div>
+                    <div class="turnsCounterTimer">
+                        <div class="minutes" style="float: left;">0</div>:<div class="seconds">00</div>:<div class="mseconds" style="float: right;">00</div>
+                    </div>
+                    <div class="gameBtn">START</div>
+                </div>
+                <p>Last 3 scores:</p>
+                <p>
+                    1. <span class="lastGame-0"></span><br>
+                    2. <span class="lastGame-1"></span><br>
+                    3. <span class="lastGame-2"></span>
+                </p>
+                <p class="clearStats">Clear stats</p>
+            </div>
+            <div class="welcomeScreen">
+                <p>Welcome to my memory game!</p>
+            </div>
+            <div class="game"></div>
+            <div class="gameWon">
+                <p>CONGRATULATIONS!!</p>
+                <p>Your score is: <span class="score"></span></p>
+                <p>Stats:</p>
+                <p class="stats">
+                    Games finished: <span class="gamesPlayed"></span><br>
+                    Lowest score: <span class="lowestScore"></span><br>
+                    Highest score: <span class="highestScore"></span><br>
+                    Average score: <span class="averageScore"></span>
+                </p>
+                
+            </div>
+        </div>
+        <script src="main.js"></script>
+    </body>
+</html>
